@@ -433,6 +433,9 @@ th {
     alignment: center;
     bottom: 0;
     width: 100%;
+    border-color: :black;
+    border-top: solid;
+    border-width: 1px;
 }
 
 /* Style the links inside the navigation bar */
@@ -456,8 +459,10 @@ th {
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border-color: :black;
+    border-top: solid;
+    border-width: 1px;
+
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -485,6 +490,7 @@ th {
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    border-color: :black;
+    border-top: solid;
+    border-width: 1px;
 }
