@@ -36,9 +36,8 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
 <div id="home" class="tabcontent" style="color: white;">
-  <div style="color: white;  background-image: url(images/wall.jpg); background-size: cover;">
+  <div style="color: white;  border-radius: 12px; background-image: url(images/wall.jpg); background-size: cover;">
   <div class="container">
     <div class="row">
       <div class="twelve columns" style="margin-top: 25%; margin-bottom: 25%;">
@@ -49,7 +48,7 @@
   </div>
 </div>
 
-  <div class="container">
+  <div id="home" class="container">
     <div class="row">
       <div class="twelve columns" style="margin-top: 25%; color: black; margin-bottom: 5%;">
         <h4>Welcome to ExtraiOS 5.0 Beta 1.0!</h4>
@@ -58,14 +57,15 @@
     </div>
   </div>
 
-  <div class="container">
+  <div id="home" class="container">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 5%; color: black; margin-bottom: 5%;">
+      <div class="twelve columns" style="margin-top: 5%; color: black; margin-bottom: 5%; padding: 10px;">
         <a class="twitter-timeline" data-height="700" href="https://twitter.com/ExtraiOS?ref_src=twsrc%5Etfw">Tweets by ExtraiOS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
   </div>
 </div>
+
 <div id="apps" class="tabcontent" style="color: white; background-image: url(images/wall.jpg); background-size: cover;">
   <div class="container">
     <div class="row">
@@ -87,7 +87,7 @@
 
 </div>
   <div class="navbar">
-  <a class="tablinks" id="defaultOpen" onclick="openCity(event, 'home')"><img style="height:24px; width: 24px;" src="images/home.png"></a>
+  <a class="tablinks" id="defaultOpen" onclick="openCity(event, 'home')"><img style="height:24px; display: block; margin: 0 auto; width: 24px;" src="images/home.png"></a>
   <a class="tablinks" onclick="openCity(event, 'apps')"><img style="height:24px; width: 24px;" src="images/apps.png" ></a>
   <a class="tablinks" onclick="openCity(event, 'themes')"><img style="height:24px; width: 24px;" src="images/paintbrush.png"></a>
 </div>
