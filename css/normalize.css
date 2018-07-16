@@ -433,7 +433,7 @@ th {
     alignment: center;
     bottom: 0;
     width: 100%;
-    border-top: solid gray;
+    border-top: solid #E1E1E1;
     border-width: .5px;
 }
 
