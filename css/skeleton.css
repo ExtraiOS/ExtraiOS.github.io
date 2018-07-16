@@ -128,6 +128,17 @@ body.light-mode {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
+/* Dark mode */
+
+.t--light {
+  background-color: hsl(0, 0%, 99.99%);
+  color: hsl(0, 0%, 5%);
+}
+
+.t--dark {
+  background-color: hsl(0, 0%, 15%);
+  color: hsl(0, 0%, 95%);
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
