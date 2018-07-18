@@ -38,16 +38,37 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="home" class="tabcontent">
 
-  <div style="color: white;  border-radius: 12px; background-image: url(images/wall.jpg);  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-size: cover;">
+<p id="demo" style="text-align: left;"></p>
+<h1 style="text-align: left; margin-bottom: 5%;">ExtraiOS</h1>
+
+<div class="w3-content">
+
+
+  <div class="mySlides" style="height: 300px; color: white;  border-radius: 12px; background-image: url(images/wall.jpg);  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-size: cover;">
     <div class="container">
       <div class="row">
-        <div class="twelve columns" style="margin-top: 25%; margin-bottom: 25%;">
+        <div class="twelve columns" style="margin-top: 15%; margin-bottom: 15%;">
           <h3>You can do that on iOS?</h3>
           <p>ExtraiOS is the place to get apps, tweaks, themes and more that you wont find on the Apple App Store! Jailbreak free.</p>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="mySlides" style="height: 300px; color: white;  border-radius: 12px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background: -webkit-linear-gradient(top, #80bfff, #0080ff); background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns" style="margin-top: 15%; margin-bottom: 15%;">
+          <h4>Apps</h4>
+          <p>See our latest Apps</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
 
   <div class="container">
     <div class="row">
@@ -218,6 +239,28 @@ document
     }
   })
 ;
+</script>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 6000);
+}
+</script>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
 </script>
 
 <!-- End Document
