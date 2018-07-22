@@ -1,305 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
+	<!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>ExtraiOS</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" name="viewport">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-startup-image" href="images/wall.png">
-
-  <!-- Mobile Specific Metas
+	<meta charset="utf-8">
+	<title>ExtraiOS</title>
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+	<link href="images/wall.png" rel="apple-touch-startup-image"><!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"><!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-
-  <script type="text/javascript" src="js/java.js"></script>
-
-
-
-  <!-- Favicon
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/skeleton.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<script src="js/java.js" type="text/javascript">
+	</script><!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-  </head>
-  <body class="t--light" style="margin-top: 0px; text-align: center; font-family: 'Quicksand', sans-serif; font-weight: bold;">
-
-  <!-- Primary Page Layout
+	<link href="images/favicon.png" rel="icon" type="image/png">
+</head>
+<body class="t--light" style="margin-top: 0px; text-align: center; font-family: 'Quicksand', sans-serif; font-weight: bold;">
+	<!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <!-- Home Page -->
-
-  <div id="home" class="tabcontent">
-
-  <h5 id="demo" style="color: #919191; margin-bottom:0%; text-align: left;"></h5>
-  <div style="float: right; height: 30px; width: 30px; background-color: white; border: 25px white; border-radius: 100px;">
-    <a style="margin: 3px; float: right;" onClick="window.location.reload()"><img style="height:24px; width: 24px;" src="images/reload.png" ></a>
-  </div>
-  <h1 style=" text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>ExtraiOS</b></h1>
-
-
-  <div class="w3-content" style="margin-bottom: 10%;">
-
-    <div class="mySlides" style="height: 300px; color: white;  border-radius: 12px; background-image: url(images/wall.jpg);  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-size: cover;">
-      <div class="container">
-        <div class="row">
-          <div class="twelve columns" style="margin-top: 100px; margin-bottom: 100px;">
-            <h3>You can do that on iOS?</h3>
-            <p>ExtraiOS is the place to get apps, tweaks, themes and more that you wont find on the Apple App Store! Jailbreak free.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="mySlides" onclick="openCity(event, 'apps')" style="height: 300px; color: white;  border-radius: 12px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background: -webkit-linear-gradient(top, #80bfff, #0080ff); background-size: cover;">
-      <div class="container">
-        <div class="row">
-          <div class="twelve columns" style="margin-top: 100px; margin-bottom: 100px;">
-            <h4 style="font-size:500%;">Apps</h4>
-            <p>We've got them, take a look.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="mySlides" onclick="openCity(event, 'themes')" style="height: 300px; color: white;  border-radius: 12px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background: -webkit-linear-gradient(top, #ffdb4d, #ff9933);">
-      <div class="container">
-        <div class="row">
-          <div class="twelve columns" style="margin-top: 100px; margin-bottom: 100px;">
-            <h4 style="font-size:500%;">Themes</h4>
-            <p>Homemade themes. The best!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div style="margin-bottom: 10%; color: white; height: 300px; border-radius: 12px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background: -webkit-linear-gradient(top, #7fff94, #4ae063); background-size: cover;">
-    <div class="container">
-      <div class="row">
-        <div class="twelve columns" style="margin-top: 100px; margin-bottom: 100px;">
-          <h4 style="font-size:300%;">Welcome to ExtraiOS 5.0 Beta 1.0!</h4>
-          <button class="tablinks" onclick="openCity(event, 'beta')">Read</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="twelve columns" style="background-color: white; border-radius: 12px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 25%; padding: 10px;">
-        <a class="twitter-timeline" data-height="400" href="https://twitter.com/ExtraiOS?ref_src=twsrc%5Etfw">Tweets by ExtraiOS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </div>
-  </div>
-
-  </div>
-
+	<!-- Home Page -->
+	<div class="tabcontent" id="home">
+		<h5 id="demo" style="color: #919191; margin-bottom:0%; text-align: left;"></h5>
+		<div style="float: right; height: 30px; width: 30px; background-color: white; border: 25px white; border-radius: 100px;">
+			<a onclick="window.location.reload()" style="margin: 3px; float: right;"><img src="images/reload.png" style="height:24px; width: 24px;"></a>
+		</div>
+		<h1 style=" text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>ExtraiOS</b></h1>
+		<div class="w3-content" style="margin-bottom: 10%;">
+			<div class="mySlides" style="height: 300px; color: white; border-radius: 12px; background-image: url(images/wall.jpg); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-size: cover;">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns" style="margin-top: 100px; margin-bottom: 100px;">
+							<h3>You can do that on iOS?</h3>
+							<p>ExtraiOS is the place to get apps, tweaks, themes and more that you wont find on the Apple App Store! Jailbreak free.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mySlides" onclick="openCity(event, 'apps')" style="height: 300px; color: white; border-radius: 12px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background: -webkit-linear-gradient(top, #80bfff, #0080ff); background-size: cover;">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns" style="margin-top: 100px; margin-bottom: 100px;">
+							<h4 style="font-size:500%;">Apps</h4>
+							<p>We've got them, take a look.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mySlides" onclick="openCity(event, 'themes')" style="height: 300px; color: white; border-radius: 12px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background: -webkit-linear-gradient(top, #ffdb4d, #ff9933);">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns" style="margin-top: 100px; margin-bottom: 100px;">
+							<h4 style="font-size:500%;">Themes</h4>
+							<p>Homemade themes. The best!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="margin-bottom: 10%; color: white; height: 300px; border-radius: 12px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background: -webkit-linear-gradient(top, #7fff94, #4ae063); background-size: cover;">
+			<div class="container">
+				<div class="row">
+					<div class="twelve columns" style="margin-top: 100px; margin-bottom: 100px;">
+						<h4 style="font-size:300%;">Welcome to ExtraiOS 5.0 Beta 1.0!</h4><button class="tablinks" onclick="openCity(event, 'beta')">Read</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns" style="background-color: white; border-radius: 12px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 25%; padding: 10px;">
+					<a class="twitter-timeline" data-height="400" href="https://twitter.com/ExtraiOS?ref_src=twsrc%5Etfw">Tweets by ExtraiOS</a>
+					<script async charset="utf-8" src="https://platform.twitter.com/widgets.js">
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
   <!-- Apps Page -->
-
-  <div id="apps" class="tabcontent">
-
-  <h1 style="text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Apps</b></h1>
-
-  <hr>
-
+	<div class="tabcontent" id="apps">
+		<h1 style="text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Apps</b></h1>
+		<hr>
+		<div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2; margin-top: 5%; margin-bottom: 5%;">
+			<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/moviebox.png" style="height: 90px; width: 90px; border-radius: 12px;"></div>
+			<div style="float: left; margin-top: 10px; margin-left: 10px;">
+				<h4>Movie Box</h4><a class="button button-primary" onclick="openCity(event, 'moviebox')">Install</a>
+			</div>
+		</div>
     <div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2; margin-top: 5%; margin-bottom: 5%;">
-      <div style="float: left; margin-top: 10px; margin-left: 10px;"><img style="height: 90px; width: 90px; border-radius: 12px;" src="images/moviebox.png"></div>
-      <div style="float: left; margin-top: 10px; margin-left: 10px;">
-        <h4>Movie Box</h4>
-        <a class="button button-primary" onclick="openCity(event, 'moviebox')">Install</a>
-      </div>
-    </div>
-
-  </div>
+			<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/twitter.png" style="height: 90px; width: 90px; border-radius: 12px;"></div>
+			<div style="float: left; margin-top: 10px; margin-left: 10px;">
+				<h4>Twitter++</h4><a class="button button-primary" onclick="openCity(event, 'twitter')">Install</a>
+			</div>
+		</div>
+	</div>
 
   <!-- Individual App Pages -->
-
-  <div id="moviebox" class="tabcontent">
-
-  <h3 style="margin-top: 0%; margin-bottom: 5%;"><b>MovieBox</b></h3>
-
-  <img style="height: 90px; width: 90px; border-radius: 12px;" src="images/moviebox.png">
-
-  <div style="text-align: left;">
-  <h5>Description</h5>
-  <p>This app allows you to get a whole ton of free movies and tv shows. It is really great and super awesome and you really should install it right now. I'm telling you. Do it</p>
-
-  <hr>
-
-</div>
-  </div>
-
-
-
-
-
+	<div class="tabcontent" id="moviebox">
+		<h3 style="margin-top: 0%; margin-bottom: 5%;"><b>MovieBox</b></h3><img src="images/moviebox.png" style="height: 90px; width: 90px; border-radius: 12px; margin-bottom: 5%;">
+		<div>
+			<button>Install</button>
+		</div>
+		<div style="text-align: left; margin-bottom: 25%;">
+			<h5>Description</h5>
+			<p>Movie Box is a well-known streaming app for iOS. With Movie Box you can stream hundreds of hit movies and tv shows long absolutely free!</p>
+			<hr>
+			<h5>What's New</h5>
+			<p>July 7, 2018 - Added to ExtraiOS</p>
+			<hr>
+			<h5>Information</h5>
+			<p>Creator: Ignat Onego</p>
+			<p>Category: Streaming</p>
+			<p>Version: 4.0.3</p>
+		</div>
+	</div>
   <!-- Themes Page -->
-
-  <div id="themes" class="tabcontent">
-
-  <h1 style="text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Themes</b></h1>
-
-  <hr>
-
-    <div class="container" style="border-style: solid; border-radius: 12px; border-width: 5px; border-color: #f2f2f2; margin-top: 5%; margin-bottom: 5%;">
-      <h5>Ethereal</h5>
-        <div class="row">
-          <div class="six columns"><img style="border-radius: 12px;" src="images/ethereal.jpg"></div>
-          <div class="six columns"><a class="button button-primary" href="#">Install</a></div>
-        </div>
-      </div>
-
-  </div>
-
+	<div class="tabcontent" id="themes">
+		<h1 style="text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Themes</b></h1>
+		<hr>
+		<div class="container" style="border-style: solid; border-radius: 12px; border-width: 5px; border-color: #f2f2f2; margin-top: 5%; margin-bottom: 5%;">
+			<h5>Ethereal</h5>
+			<div class="row">
+				<div class="six columns"><img src="images/ethereal.jpg" style="border-radius: 12px;"></div>
+				<div class="six columns">
+					<a class="button button-primary" href="#">Install</a>
+				</div>
+			</div>
+		</div>
+	</div>
   <!-- Info Page -->
-
-  <div id="more" class="tabcontent">
-
-  <div style="float: right; height: 30px; width: 30px; background-color: white; border: 25px white; border-radius: 100px;">
-    <a class="tablinks" style="margin: 3px; float: right; text-align: right;" onclick="openCity(event, 'set')"><img style="height:24px; width: 24px;" src="images/settings.png" ></a>
-  </div>
-
-  <h1 style=" text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Info</b></h1>
-
-  <hr>
-
-  <div class="container">
-    <h5>Developers</h5>
-    <div class="row">
-      <div class="six columns" style="color: #919191;"><p>LAW <a href="http://twitter.com/LAW_iOS">@LAW_iOS</a></p></div>
-      <div class="six columns" style="color: #919191;"><p>TwisterTech <a href="http://twitter.com/TTechy_">@TTechy_</a></p></div>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="container">
-    <h5>Partners</h5>
-    <div class="row">
-      <div class="twelve columns" style="color: #919191;"><p>FlekSt0re <a href="http://twitter.com/FlekSt0re">@FlekSt0re</a></p></div>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="container">
-    <h5>Testers</h5>
-    <div class="row">
-      <div class="six columns" style="color: #919191;"><p>Ryan Lankford <a href="http://twitter.com/ATAPLUSUS">@ATAPLUSUS</a></p></div>
-      <div class="six columns" style="color: #919191;"><p>J3 <a href="http://twitter.com/jose3dvg">@jose3dvg</a></p></div>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="container" style="margin-bottom: 15%">
-    <h5>Special Thanks</h5>
-    <div class="row">
-      <div class="twelve columns" style="color: #919191;"><p><a href="http://iosem.us">iOSEmus</a> (provided ipas)</p></div>
-    </div>
-  </div>
-
-  </div>
-
+	<div class="tabcontent" id="more">
+		<div style="float: right; height: 30px; width: 30px; background-color: white; border: 25px white; border-radius: 100px;">
+			<a class="tablinks" onclick="openCity(event, 'set')" style="margin: 3px; float: right; text-align: right;"><img src="images/settings.png" style="height:24px; width: 24px;"></a>
+		</div>
+		<h1 style=" text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Info</b></h1>
+		<hr>
+		<div class="container">
+			<h5>Developers</h5>
+			<div class="row">
+				<div class="six columns" style="color: #919191;">
+					<p>LAW <a href="http://twitter.com/LAW_iOS">@LAW_iOS</a></p>
+				</div>
+				<div class="six columns" style="color: #919191;">
+					<p>TwisterTech <a href="http://twitter.com/TTechy_">@TTechy_</a></p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<h5>Partners</h5>
+			<div class="row">
+				<div class="twelve columns" style="color: #919191;">
+					<p>FlekSt0re <a href="http://twitter.com/FlekSt0re">@FlekSt0re</a></p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<h5>Testers</h5>
+			<div class="row">
+				<div class="six columns" style="color: #919191;">
+					<p>Ryan Lankford <a href="http://twitter.com/ATAPLUSUS">@ATAPLUSUS</a></p>
+				</div>
+				<div class="six columns" style="color: #919191;">
+					<p>J3 <a href="http://twitter.com/jose3dvg">@jose3dvg</a></p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container" style="margin-bottom: 15%">
+			<h5>Special Thanks</h5>
+			<div class="row">
+				<div class="twelve columns" style="color: #919191;">
+					<p><a href="http://iosem.us">iOSEmus</a> (provided ipas)</p>
+				</div>
+			</div>
+		</div>
+	</div>
   <!-- Settings Page -->
-
-  <div id="set" class="tabcontent">
-
-  <h1 style="text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Settings</b></h1>
-
-  <hr>
-
-  <h4>Dark Mode</h4>
-  <label class="switch">
-    <input class="o-menu__item / t-menu__item / js-change-theme" type="checkbox">
-    <span class="slider round"></span>
-  </label>
-
-  </div>
-
+	<div class="tabcontent" id="set">
+		<h1 style="text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Settings</b></h1>
+		<hr>
+		<h4>Dark Mode</h4><label class="switch"><input class="o-menu__item / t-menu__item / js-change-theme" type="checkbox"> <span class="slider round"></span></label>
+	</div>
   <!-- Beta Page -->
+	<div class="tabcontent" id="beta">
+		<a class="tablinks" onclick="openCity(event, 'home')" style="float: left;">
+		<p>⇦ Back</p></a>
+		<hr>
+		<h4>Our first web app... built from scratch!</h4>
+		<p>Thanks for installing the beta version of ExtraiOS 5.0! We are excited and grateful that you have decided to help us test the next generation of our store. We look forward to hearing you feedback about this new version. Please send any feedback to extraios@mail.com or tweet us @ExtraiOS on Twitter. We hope you enjoy your experience!</p>
+		<h5>-ExtraiOS Team</h5>
+	</div>
+	<div class="navbar">
+		<a class="tablinks" id="defaultOpen" onclick="openCity(event, 'home')"><img src="images/home.png" style="height:24px; display: block; margin: 0 auto; width: 24px;"></a> <a class="tablinks" onclick="openCity(event, 'apps')"><img src="images/apps.png" style="height:24px; width: 24px;"></a> <a class="tablinks" onclick="openCity(event, 'themes')"><img src="images/paintbrush.png" style="height:24px; width: 24px;"></a> <a class="tablinks" onclick="openCity(event, 'more')"><img src="images/more.png" style="height:24px; width: 24px;"></a>
+	</div>
+	<script>
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	</script>
+	<script>
+	document
+	 .querySelector('.js-change-theme')
+	 .addEventListener('click', () => {
+	   const body = document.querySelector('body');
 
-  <div id="beta"  class="tabcontent">
+	   if (body.classList.contains('t--light')) {
+	     body.classList.remove('t--light');
+	     body.classList.add('t--dark');
+	   }
+	   else {
+	     body.classList.remove('t--dark');
+	     body.classList.add('t--light');
+	   }
+	 })
+	;
+	</script>
+	<script>
+	var slideIndex = 0;
+	carousel();
 
-    <a class="tablinks" style="float: left;" onclick="openCity(event, 'home')"><p>⇦ Back</p></a>
-
-    <hr>
-
-    <h4>Our first web app... built from scratch!</h4>
-    <p>Thanks for installing the beta version of ExtraiOS 5.0! We are excited and grateful that you have decided to help us test the next generation of our store. We look forward to hearing you feedback about this new version. Please send any feedback to extraios@mail.com or tweet us @ExtraiOS on Twitter. We hope you enjoy your experience!</p>
-    <h5>-ExtraiOS Team</h5>
-
-  </div>
-
-  <div class="navbar">
-  <a class="tablinks" id="defaultOpen" onclick="openCity(event, 'home')"><img style="height:24px; display: block; margin: 0 auto; width: 24px;" src="images/home.png"></a>
-  <a class="tablinks" onclick="openCity(event, 'apps')"><img style="height:24px; width: 24px;" src="images/apps.png" ></a>
-  <a class="tablinks" onclick="openCity(event, 'themes')"><img style="height:24px; width: 24px;" src="images/paintbrush.png"></a>
-  <a class="tablinks" onclick="openCity(event, 'more')"><img style="height:24px; width: 24px;" src="images/more.png"></a>
-  </div>
-
-<script>// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-
-<script>
-document
-  .querySelector('.js-change-theme')
-  .addEventListener('click', () => {
-    const body = document.querySelector('body');
-
-    if (body.classList.contains('t--light')) {
-      body.classList.remove('t--light');
-      body.classList.add('t--dark');
-    }
-    else {
-      body.classList.remove('t--dark');
-      body.classList.add('t--light');
-    }
-  })
-;
-</script>
-
-<script>
-var slideIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 6000);
-}
-</script>
-
-<script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d.toDateString();
-</script>
-
-
-<!-- End Document
+	function carousel() {
+	   var i;
+	   var x = document.getElementsByClassName("mySlides");
+	   for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";
+	   }
+	   slideIndex++;
+	   if (slideIndex > x.length) {slideIndex = 1}
+	   x[slideIndex-1].style.display = "block";
+	   setTimeout(carousel, 6000);
+	}
+	</script>
+	<script>
+	var d = new Date();
+	document.getElementById("demo").innerHTML = d.toDateString();
+	</script> <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
