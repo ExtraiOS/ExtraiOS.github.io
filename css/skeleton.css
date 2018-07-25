@@ -140,19 +140,7 @@ body.light-mode {
   color: hsl(0, 0%, 95%);
 }
 
-.plus{
-    background-image: url("https://extraios.github.io/images/settings.png");
-    width:512px;
-    height:512px;
-    background-repeat:no-repeat;
-}
 
-.plus.minus{
-    background-image: url("https://extraios.github.io/images/settingslight.png");
-    width:24px;
-    height:24px;
-    background-repeat:no-repeat;
-}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
