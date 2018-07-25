@@ -34,6 +34,7 @@
 			<a onclick="window.location.reload()" style="margin: 3px; float: right;"><img src="images/reload.png" style="height:24px; width: 24px;"></a>
 		</div>
 		<h1 style=" text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>ExtraiOS</b></h1>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 		<div class="w3-content" style="margin-bottom: 10%;">
 			<div class="mySlides" style="height: 300px; color: white; border-radius: 12px; background-image: url(images/wall.jpg); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-size: cover;">
 				<div class="container">
@@ -88,7 +89,7 @@
   </div>
 	</div>
   <!-- Apps Page -->
-	<div class="tabcontent" id="apps">
+	<div class="tabcontent" name="apps" id="apps">
 		<h1 style="text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Apps</b></h1>
 		<hr>
     <div class="container">
@@ -396,7 +397,9 @@
 	<script>
 	var d = new Date();
 	document.getElementById("demo").innerHTML = d.toDateString();
-	</script> <!-- End Document
+	</script>
+
+
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
