@@ -51,6 +51,14 @@ document
       body.classList.remove('t--dark');
       body.classList.add('t--light');
     }
+    if (body.classList.contains('plus')) {
+      body.classList.remove('plus');
+      body.classList.add('plus.minus');
+    }
+    else {
+      body.classList.remove('plus.minus');
+      body.classList.add('plus');
+    }
   })
 ;
 
