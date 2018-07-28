@@ -427,7 +427,7 @@ th {
 }
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
-    background-color: white;
+    background-color: inherit;
     overflow: hidden;
     position: fixed;
     alignment: center;
@@ -560,7 +560,7 @@ input:checked + .slider:before {
   height: 1em;
 }
 .spinner.center {
-  
+
 }
 .spinner .spinner-blade {
   position: absolute;
