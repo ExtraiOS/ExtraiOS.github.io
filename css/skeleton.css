@@ -241,6 +241,7 @@ input[type="button"].button-primary:focus {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
 input[type="number"],
+input[type="search"],
 input[type="text"],
 input[type="tel"],
 input[type="url"],
@@ -296,23 +297,13 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
-input[type="search"],
-{
-  height: 38px;
-  width: auto;
-  font-size: 16px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box; }
-input[type='text'],
-input[type='number'],
-textarea {
-    font-size: 16px;
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    select,
+    textarea,
+    input {
+      font-size: 16px;
+    }
   }
-
 
 
 /* Lists
