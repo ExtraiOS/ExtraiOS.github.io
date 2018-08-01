@@ -105,6 +105,7 @@
 	<div class="tabcontent" name="apps" id="apps">
 		<h1 style="text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Apps</b></h1>
 		<hr>
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for apps.." title="Type in a name">
     <div class="container">
       <div style="max-width: 500px;">
       <div style="float:left">
@@ -117,27 +118,34 @@
       </div>
     </div>
 		</div>
-		<div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2; margin-top: 5%; margin-bottom: 5%;">
-			<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/moviebox.png" style="height: 90px; width: 90px; border-radius: 16px;"></div>
-			<div style="float: left; margin-top: 10px; margin-left: 10px;">
-				<h4>Movie Box</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'moviebox')">Install</a>
+		<ul id="myUL">
+			<li><a style="visibility: hidden;" href="#">Movie Box</a>
+				<div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2;">
+					<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/moviebox.png" style="height: 90px; width: 90px; border-radius: 16px;"></div>
+					<div style="float: left; margin-top: 10px; margin-left: 10px;">
+						<h4>Movie Box</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'moviebox')">Install</a>
+					</div>
+      	<img src="images/notworking.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 			</div>
-      <img src="images/notworking.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
-		</div>
-    <div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2; margin-top: 5%; margin-bottom: 5%;">
-			<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/twitter.png" style="height: 90px; width: 90px; border-radius: 16px;"></div>
-			<div style="float: left; margin-top: 10px; margin-left: 10px;">
-				<h4>Twitter++</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'twitter')">Install</a>
+			</li>
+			<li><a style="visibility: hidden;" href="#">Twitter++</a>
+    	<div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2;">
+				<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/twitter.png" style="height: 90px; width: 90px; border-radius: 16px;"></div>
+				<div style="float: left; margin-top: 10px; margin-left: 10px;">
+					<h4>Twitter++</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'twitter')">Install</a>
+				</div>
+      	<img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 			</div>
-      <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
-		</div>
-    <div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2; margin-top: 5%; margin-bottom: 5%;">
+			</li>
+		<li><a style="visibility: hidden;" href="#">GBA4iOS</a>
+    <div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2;">
 			<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/gba4ios.png" style="height: 90px; width: 90px; border-radius: 16px;"></div>
 			<div style="float: left; margin-top: 10px; margin-left: 10px;">
 				<h4>GBA4iOS</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'gba4ios')">Install</a>
 			</div>
       <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 		</div>
+		</li>
     <div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2; margin-top: 5%; margin-bottom: 5%;">
 			<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/provenance.png" style="height: 90px; width: 90px; border-radius: 16px;"></div>
 			<div style="float: left; margin-top: 10px; margin-left: 10px;">
@@ -257,6 +265,7 @@
 			</div>
       <img src="images/notworking.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 		</div>
+		</ul>
 	</div>
 
   <!-- Individual App Pages -->
@@ -651,6 +660,23 @@
 	var d = new Date();
 	document.getElementById("demo").innerHTML = d.toDateString();
 	</script>
+	<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 
 </body>
 </html>
