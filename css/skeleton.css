@@ -177,6 +177,12 @@ a {
 a:hover {
   color: #0FA0CE; }
 
+.text {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

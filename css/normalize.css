@@ -679,4 +679,19 @@ input:checked + .slider:before {
   }
 }
 
- abs
+@media (min-width: 400px) {
+  .picl {
+    float: left;
+    margin: 0px;
+  }
+  .picr {
+    float: right;
+  }
+}
+
+@media (max-width: 550px) {
+  .picr {
+    visibility: hidden;
+    height: 1px;
+  }
+}
