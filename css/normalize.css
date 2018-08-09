@@ -695,3 +695,28 @@ input:checked + .slider:before {
     height: 1px;
   }
 }
+
+.aniimg {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:red;  top:-200px; height: 1px; width: 1px;}
+
+    100% {background-color:red;  top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red;  top:-200px; height: 1px; width: 1px;}
+
+    100% {background-color:red;  top:0px;}
+}
