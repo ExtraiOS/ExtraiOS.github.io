@@ -858,7 +858,42 @@
 		<h1 style="text-align: left; margin-top: 0%; margin-bottom: 5%;"><b>Settings</b></h1>
 		<hr>
 		<h4>Dark Mode</h4><label class="switch"><input class="o-menu__item / t-menu__item / js-change-theme" type="checkbox"> <span class="slider round"></span></label>
+		<hr style="visibility: hidden;">
+		<h4>Software Update</h4>
+		<button style="margin-right: 10px;" class="tablinks" onclick="openCity(event, 'update')">Check For Update</button>
+
 	</div>
+	<!-- Update Page -->
+	<div class="tabcontent" id="update">
+		<h3 style="margin-top: 100px;">Software Update</h3>
+		<div align="center" style="margin-bottom: 25px;">
+					<div id="deletesuccess"><p>Checking for Update</p>
+		  <div  style="margin-bottom: 20px;"   class='spinner center'>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		    <div class='spinner-blade'></div>
+		  </div>
+			</div>
+
+
+	<div id="hide" style="visibility: hidden"><p style="margin-bottom: 0px; padding-bottom: 0px;">ExtraiOS 5.0.0</p><p style="margin-top: 0px; padding-top: 0px;">Your software is up to date.</p></div>
+<script type="text/javascript">
+function showIt() {
+  document.getElementById("hide").style.visibility = "visible";
+}
+setTimeout("showIt()", 9000); // after 2 sec
+</script>
+</div>
+</div>
   <!-- Beta Page -->
 	<div class="tabcontent" id="beta">
 		<a class="tablinks" onclick="openCity(event, 'home')" style="float: left;">
@@ -937,6 +972,32 @@ function myFunction() {
         }
     }
 }
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46156385-1', 'cssscript.com');
+ga('send', 'pageview');
+
+</script>
+<script>
+$(document).ready( function() {
+				$('#deletesuccess').delay(8000).fadeOut();
+			});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46156385-1', 'cssscript.com');
+ga('send', 'pageview');
+
 </script>
 
 </body>
