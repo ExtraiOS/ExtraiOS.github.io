@@ -53,7 +53,22 @@ document
     }
 
   })
+  .addEventListener('click', () => {
+    const i = document.querySelector('i');
+
+    if (i.classList.contains('t--light')) {
+      i.classList.remove('t--light');
+      i.classList.add('t--dark');
+    }
+    else {
+      i.classList.remove('t--dark');
+      i.classList.add('t--light');
+    }
+
+  })
 ;
+
+
 
 document.getElementById("defaultOpen").click();
 

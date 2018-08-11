@@ -140,7 +140,13 @@ body.light-mode {
   color: hsl(0, 0%, 95%);
 }
 
+.it--light {
+  color: black;
+}
 
+.it--dark {
+  color: white;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

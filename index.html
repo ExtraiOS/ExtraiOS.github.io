@@ -19,8 +19,18 @@
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/skeleton.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="icono.min.css">
 	<script src="js/java.js" type="text/javascript">
 	</script>
+	<script>
+if (!window.navigator.standalone) {
+alert("Please Download Our App");
+location.href = "download.html";
+         }
+</script>
+<noscript>
+<meta http-equiv="refresh" content="0;url=error.html">
+</noscript>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123142121-1"></script>
@@ -43,9 +53,9 @@
 	<!-- Home Page -->
 	<div class="tabcontent" id="home">
 		<h5 id="demo" style="color: #919191; margin-bottom:0%; text-align: left;"></h5>
-		<div style="float: right; height: 30px; width: 30px; background-color: white; border: 25px white; border-radius: 100px;">
-			<a onclick="window.location.reload()" style="margin: 3px; float: right;"><img src="images/reload.png" style="height:24px; width: 24px;"></a>
-		</div>
+
+		<a onclick="window.location.reload()" style="margin: 3px; float: right;"><img src="images/reload.png" style="height:24px; width: 24px;"></a>
+
 		<h1 style="font-weight:bold; text-align: left; margin-top: 0%; margin-bottom: 5%;">ExtraiOS</h1>
 		<button style="visibility: hidden; height: 0px; margin: 0px;" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 		<div class="w3-content" style="margin-bottom: 10%;">
