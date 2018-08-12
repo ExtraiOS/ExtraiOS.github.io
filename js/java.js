@@ -1,3 +1,4 @@
+//TABS
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -34,10 +35,7 @@ function openCity(evt, cityName) {
 	    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 	}
 
-
-
-
-
+//DARK MODE
 document
   .querySelector('.js-change-theme')
   .addEventListener('click', () => {
@@ -69,8 +67,9 @@ document
 ;
 
 
-
+//DEFAULT HOME PAGE OPEN
 document.getElementById("defaultOpen").click();
+
 
 document
   .querySelector('.js-change-theme')
