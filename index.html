@@ -26,7 +26,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script src="js/java.js" type="text/javascript">
 	</script>
-	<scrit>
+	<script>
 			if (!window.navigator.standalone) {
 				location.href = "download.html";
 	         }
@@ -204,6 +204,15 @@
       <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 		</div>
 		</li>
+		<li><a style="visibility: hidden;" href="#">MediaBox</a>
+    <div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2;">
+			<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/mediabox.png" style="height: 90px; width: 90px; border-radius: 16px;"></div>
+			<div style="float: left; margin-top: 10px; margin-left: 10px;">
+				<h4>MediaBox</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'mediabox')">Install</a>
+			</div>
+      <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
+		</div>
+	</li>
 		<li><a style="visibility: hidden;" href="#">Provenance</a>
     <div class="container" style="padding-bottom: 0px; padding-left: 0px; color: black; border-radius: 12px; background-color: #f2f2f2;">
 			<div style="float: left; margin-top: 10px; margin-left: 10px;"><img src="images/provenance.png" style="height: 90px; width: 90px; border-radius: 16px;"></div>
@@ -219,7 +228,7 @@
 			<div style="float: left; margin-top: 10px; margin-left: 10px;">
 				<h4>iTransmission</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'itransmission')">Install</a>
 			</div>
-      <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
+      <img src="images/notworking.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 		</div>
 	</li>
 	<li><a style="visibility: hidden;" href="#">Instagram++</a>
@@ -264,7 +273,7 @@
 			<div style="float: left; margin-top: 10px; margin-left: 10px;">
 				<h4>Deezer++</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'deezer')">Install</a>
 			</div>
-      <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
+      <img src="images/notworking.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 		</div>
 	</li>
 	<li><a style="visibility: hidden;" href="#">BarMagnet</a>
@@ -273,7 +282,7 @@
 			<div style="float: left; margin-top: 10px; margin-left: 10px;">
 				<h4>BarMagnet</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'barmagnet')">Install</a>
 			</div>
-      <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
+      <img src="images/notworking.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 		</div>
 	</li>
 	<li><a style="visibility: hidden;" href="#">Kodi</a>
@@ -309,7 +318,7 @@
 			<div style="float: left; margin-top: 10px; margin-left: 10px;">
 				<h4>Twitch++</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'twitch')">Install</a>
 			</div>
-      <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
+      <img src="images/notworking.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 		</div>
 	</li>
 	<li><a style="visibility: hidden;" href="#">RetroArch</a>
@@ -318,7 +327,7 @@
 			<div style="float: left; margin-top: 10px; margin-left: 10px;">
 				<h4>RetroArch</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'retroarch')">Install</a>
 			</div>
-      <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
+      <img src="images/notworking.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 		</div>
 	</li>
 	<li><a style="visibility: hidden;" href="#">PPSSPP</a>
@@ -327,7 +336,7 @@
 			<div style="float: left; margin-top: 10px; margin-left: 10px;">
 				<h4>PPSSPP</h4><a class="button button-primary" style="float: left;" onclick="openCity(event, 'ppsspp')">Install</a>
 			</div>
-      <img src="images/working.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
+      <img src="images/notworking.png" style="float: right; margin-top: 10px; margin-right: 10px; height: 30px; width: 30px;">
 		</div>
 	</li>
 	<li><a style="visibility: hidden;" href="#">Play!</a>
@@ -423,6 +432,29 @@
 			<p>Creator: Riley Testut</p>
 			<p>Category: Emulators</p>
 			<p>Version: 2.0</p>
+		</div>
+	</div>
+	<div class="tabcontent" id="mediabox">
+		<div class="container" style="margin: 5px; padding: 0px;">
+		<a class="tablinks" onclick="openCity(event, 'apps')" style="float: left;">
+		<p>◀ Back</p>
+		</a>
+		</div>
+		<h3 style="margin-top: 0%; margin-bottom: 5%;"><b>Provenance</b></h3><img src="images/mediabox.png" style="height: 90px; width: 90px; border-radius: 16px; margin-bottom: 5%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+		<div>
+			<a class="button" href="http://royalurls.com/Nq5GH3">Install</a>
+		</div>
+		<div style="text-align: left; margin-bottom: 25%;">
+			<h5>Description</h5>
+			<p>MediaBox allows you to stream and download hundreds of movies and tv shows, absolutely free! Watch the latest movies before they even leave theaters. Binge watch every episode of the shows everyone is talking about from all the major streaming services without a subscription! This app comes with a lot of great features, it is easy to use, and it is completly free!</p>
+			<hr>
+			<h5>What's New</h5>
+			<p>December 29, 2018 - Added to ExtraiOS</p>
+			<hr>
+			<h5>Information</h5>
+			<p>Creator: Playbox_hd</p>
+			<p>Category: Emulators</p>
+			<p>Version: 1.0</p>
 		</div>
 	</div>
   <div class="tabcontent" id="provenance">
